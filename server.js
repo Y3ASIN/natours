@@ -1,9 +1,11 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable node/no-unpublished-require */
 const mongoose = require('mongoose');
-
 const dotenv = require('dotenv');
-const app = require('./app');
 
 dotenv.config({ path: './config.env' });
+const app = require('./app');
+
 const DB = process.env.DATABASE.replace(
   '<PASSWORD>',
   process.env.DATABASE_PASSWORD,
@@ -12,7 +14,6 @@ const DB = process.env.DATABASE.replace(
 mongoose.connect(DB).then(() => {
   console.log('DB connection successful!');
 });
-
 
 const port = process.env.PORT || 4000;
 
