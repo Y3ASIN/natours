@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable node/no-unpublished-require */
 const fs = require('fs');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
