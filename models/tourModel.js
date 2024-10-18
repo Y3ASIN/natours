@@ -1,6 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable node/no-unpublished-require */
-
 const mongoose = require('mongoose');
 
 const tourSchema = new mongoose.Schema({
