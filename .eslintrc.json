@@ -22,6 +22,7 @@
     "no-underscore-dangle": 0,
     "class-methods-use-this": 0,
     "prefer-destructuring": ["error", { "object": true, "array": false }],
-    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }]
+    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }],
+    "devDependencies": false
   }
 }
